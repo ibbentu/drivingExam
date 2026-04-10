@@ -1,0 +1,15 @@
+# python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Flask
+instance/
+
+# VS
+.vscode/
+
+# etc
+*.crt
+*.key
