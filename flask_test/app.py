@@ -4,7 +4,6 @@ app = Flask(__name__)
 
 # 아주 작은 테스트라도 호스트를 제한하는 편이 안전합니다.
 ALLOWED_HOSTS = {
-
     }
 
 @app.before_request
@@ -21,11 +20,3 @@ def add_security_headers(response):
 @app.route("/")
 def index():
     return render_template("index.html")
-
-if __name__ == "__main__":
-    app.run(
-        host="0.0.0.0",
-        port=13112,
-        debug=False,
-        ssl_context=("certs/servicehost.shop.crt", "certs/servicehost.shop.key")
-    )

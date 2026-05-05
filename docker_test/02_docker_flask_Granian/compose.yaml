@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    container_name: flask_granian_web
+    ports:
+      - "127.0.0.1:5000:5000"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1

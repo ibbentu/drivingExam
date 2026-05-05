@@ -13,3 +13,4 @@ instance/
 # etc
 *.crt
 *.key
+key.txt

@@ -1,3 +1,17 @@
 openssl req -x509 -newkey rsa:2048 -sha256 -days 365 -noenc -keyout certs/<url>.key -out certs/<url>.crt -subj "/C=KR/ST=Seoul/L=Seoul/O=Example/OU=Test/CN=<url>" -addext "subjectAltName=DNS:<url>"
 
 openssl x509 -in certs/<url>.crt -text -noout
+
+
+==================================================
+WSL cmd
+# set WSL version to 2
+wsl --set-default-version 2
+# show installed versions
+wsl -l -v
+# show online avaible pkg
+wsl --list --online     /   wsl -l -o
+# uninstall pkg
+wsl --unregister <pkg>
+# install pkg
+wsl --install -d <pkg>

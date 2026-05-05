@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f3f5f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 360px;
+    padding: 32px;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+p {
+    color: #555;
+}
+
+a {
+    display: inline-block;
+    margin-top: 16px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
